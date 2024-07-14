@@ -5,14 +5,14 @@
 
     {% if user.is_authenticated %}
         {{ user.username }}!
+        
         <form action="{% url 'logout' %}" method="post">
-
             {% csrf_token %}
             <a href="" onclick="this.parentNode.submit(); return false;">Saytdan chiqish</a>
         </form>
     {% else %}
         <p>Saytga kirmagansiz</p>
-        <a href="{% url 'login' %}">Kirish</a>
+        <a href="{% url 'login' %}">Kirish</a> | 
         <a href="{% url 'signup' %}">Ro`yxatdan o`tish</a>
     {% endif %}
 
