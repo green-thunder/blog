@@ -4,7 +4,7 @@
 {% block title %}Ro`yxatdan o`tish{% endblock title %}
 
 {% block content %}
-<form action="" method="post" class="w-50 m-auto form-signin">
+<form action="" method="post" class="w-50 m-auto form-signin p-5">
     <h2>Ro`yxatdan o`tish</h2>
     {% csrf_token %}
     {{ form|crispy }}

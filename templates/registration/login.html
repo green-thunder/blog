@@ -4,7 +4,7 @@
 {% block title %}Kirish{% endblock title %}
 
 {% block content %}
-<form action="" method="post" class="w-50 m-auto form-signin mt-">
+<form action="" method="post" class="w-50 m-auto form-signin p-5">
     <h2>Saytga kirish</h2>
     {% csrf_token %}
     {{ form|crispy }}
